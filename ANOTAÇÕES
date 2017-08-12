@@ -1,0 +1,22 @@
+Provider é um provedor (duh). Usa-se (tbm) para encapsular a parte de consumo de informação
+
+O HttpModule deve ser importado dentro de app.module.ts(@angular).
+    Deve colocar tbm HttpModule dentro de Imports.
+    ionic generate provider Moovie
+    Ao gerar o provider, já vem com o Http instalado
+    Usado para fazer as requisições. Logo, ele é chamado quando requisita-se informações e ele distribui.
+    Para acessar o provider no feed, inclui-se providers:[moovieprovider] dentro de @components em feed.ts
+    Coloca tbm no construtor. moovieprovider:moovieprovider
+
+Antes de rodar o 'ionic cordova run android --emulator' rodar o seguinte comando:
+    ionic cordova platform add android
+
+ionic cordova run android --emulator
+    Roda o app no emulador do android (emulador estando aberto, claro)
+    Instalar o cordova se solicitado
+
+Se der erro env.cmdrun.., rodar os seguintes comandos:
+    npm i -g ionic@latest
+    npm i --save-dev --save-exact ionic@latest
+    Eles vão atualizar o ionic cli para a última versão.
+

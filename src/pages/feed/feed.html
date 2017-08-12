@@ -14,39 +14,43 @@
 
 
 <ion-content padding>
-	<ion-card>
-
+	<ion-card *ngFor="let filme of lista_filmes"> <!--*ngFor é uma diretiva que mexe com a estrutura do html. Repete neste caso --> 
+		<!-- let cria uma variável. Enquanto tiver itens dentro da lista_filmes, vai repetir o ion_card -->
 	<ion-item>
 		<ion-avatar item-start>
 		<img src="assets/images/avatar.png">
 		</ion-avatar>
-		<h2 class="feed_title">{{ nome_usuario }}</h2> <!-- Chaves duplas = Bind por interpolação -->
 		<!-- Avisa o Angular para executar um comando -->
-		<p class="feed_date">November 5, 1955</p>
+		<!-- <h2 class="feed_title">{{ nome_usuario }}</h2> --> <!-- Chaves duplas = Bind por interpolação -->
+		<h2 class="feed_title">{{ filme.original_title }}</h2>
+		<p class="feed_date">{{ filme.release_date }}</p>
 	</ion-item>
 
-	<img src="assets/images/feed.png">
+	<img [src]="'https://image.tmdb.org/t/p/w300/' + filme.backdrop_path">
+	<!-- O link encontra-se em Images, dentro de Getting Started -->
+	<!-- w300 é width. Tamanho da imagem. -->
+	<!-- backdrop_path encontra-se em Movies, getPopular -->
 
 	<ion-card-content>
-		<p>Criando um app!</p>
+		<p>{{ filme.overview }}</p>
 	</ion-card-content>
 
 	<ion-row>
 	<ion-col>
 		<button ion-button icon-left clear small>
 			<ion-icon name="thumbs-up"></ion-icon>
-			<div>12 Likes</div>
+			<div>{{ objeto_feed.qntd_likes }} Likes</div>
 		</button>
 		</ion-col>
 		<ion-col>
 			<button ion-button icon-left clear small>
 				<ion-icon name="text"></ion-icon>
-				<div>4 Comments</div>
+				<div>{{ objeto_feed.qntd_comments }} Comments</div>
 			</button>
 		</ion-col>
 		<ion-col center text-center>
 			<ion-note>
-				11h ago
+				{{ objeto_feed.time_comment }}
 			</ion-note>
 		</ion-col>
 	  </ion-row>

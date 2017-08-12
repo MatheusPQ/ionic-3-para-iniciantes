@@ -1,3 +1,6 @@
+AO FAZER DAR UM GIT CLONE, RODAR O COMANDO 'NPM INSTALL' PARA INSTALAR BIBLIOTECAS QUE NÃO SUBIRAM NO GIT (POIS FORAM IGNORADAS NO ARQUIVO .gitignore)!
+
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template

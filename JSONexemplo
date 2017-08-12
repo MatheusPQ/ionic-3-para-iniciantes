@@ -1,0 +1,60 @@
+// Nome: Matheus Pinheiro
+// Idade: 21
+// Telefone: 99999999
+// Enderecos: 
+// 	Casa => Rua 1
+// 	Trabalho => Rua 2
+// Profissao: Desenvolvedor
+
+
+// -- CONOTAÇÃO DE OBJETO --
+// ---- Chaves geram objetos. Podem ter um número, um texto etc.
+// ---- Colchetes geram listas.
+{
+	idade: 27,
+	nome: "Matheus Pinheiro",
+	telefone: "99999999",
+	enderecos: [ // Colchete indica que enderecos é uma lista. Chaves indicam um objeto.
+		{ // Portanto, lista de objetos
+			titulo: "casa",
+			endereco: "Rua 1"
+		},
+		{
+			titulo: "trabalho",
+			endereco: "Rua 2"
+		}
+	],
+	profissao: "Desenvolvedor"
+}
+
+// -- EM FUNCIONAMENTO --
+
+var objeto = {
+	idade: 27,
+	nome: "Matheus Pinheiro",
+	telefone: "99999999",
+	enderecos: [ //Colchete indica que enderecos é uma lista. Chaves indicam um objeto.
+		{ //Portanto, lista de objetos
+			titulo: "casa",
+			endereco: "Rua 1"
+		},
+		{
+			titulo: "trabalho",
+			endereco: "Rua 2"
+		}
+	],
+	profissao: "Desenvolvedor"
+}
+undefined // Enter
+objeto.idade 
+27
+objeto.nome
+"Matheus Pinheiro"
+objeto.enderecos
+(2) [Object, Object]0: Objectendereco: "Rua 1"titulo: "casa"__proto__: Object1: Objectlength: 2__proto__: Array(0)
+objeto.enderecos[0]
+Object {titulo: "casa", endereco: "Rua 1"}
+objeto.enderecos[0].titulo
+"casa"
+objeto.enderecos[0].endereco
+"Rua 1"
