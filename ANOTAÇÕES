@@ -20,3 +20,18 @@ Se der erro env.cmdrun.., rodar os seguintes comandos:
     npm i --save-dev --save-exact ionic@latest
     Eles vão atualizar o ionic cli para a última versão.
 
+GitHub
+    git init
+    git add .
+    git commit -m "segundo commit"
+        Indica que os arquivos adicionados vão 'commit' no servidor
+        -m pq há uma mensagem
+    git push origin master
+        git remote add origin https://github.com/MatheusPQ/ionic-3-para-iniciantes.git
+            CASO SEJA NECESSÁRIO!
+            git remote -v
+                Indica para qual origem o git está apontando
+        Talvez seja necessário login
+    
+
+    
